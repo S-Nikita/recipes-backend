@@ -1,0 +1,113 @@
+{
+  "kind": "collectionType",
+  "collectionName": "recipes",
+  "info": {
+    "name": "recipe",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 70
+    },
+    "description": {
+      "type": "string",
+      "required": true,
+      "maxLength": 320
+    },
+    "protein_portion": {
+      "type": "integer",
+      "required": true
+    },
+    "protein_100": {
+      "type": "integer",
+      "required": true
+    },
+    "fat_portion": {
+      "type": "integer",
+      "required": true
+    },
+    "fat_100": {
+      "type": "integer"
+    },
+    "carbs_portion": {
+      "type": "integer",
+      "required": true
+    },
+    "carbs_100": {
+      "type": "integer",
+      "required": true
+    },
+    "picture": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "calories_portion": {
+      "type": "integer",
+      "required": true
+    },
+    "calories_100": {
+      "type": "integer",
+      "required": true
+    },
+    "time": {
+      "type": "integer",
+      "required": true
+    },
+    "difficulty": {
+      "type": "integer",
+      "required": true,
+      "max": 3,
+      "min": 1
+    },
+    "category_item": {
+      "type": "component",
+      "repeatable": true,
+      "component": "description.category"
+    },
+    "slug": {
+      "type": "uid",
+      "required": true,
+      "targetField": "title"
+    },
+    "ingridient_item": {
+      "type": "component",
+      "repeatable": true,
+      "component": "description.ingridients",
+      "required": true
+    },
+    "direction_item": {
+      "type": "component",
+      "repeatable": true,
+      "component": "description.directions",
+      "required": true
+    },
+    "link": {
+      "type": "string"
+    },
+    "author": {
+      "type": "string"
+    },
+    "author_link": {
+      "type": "string"
+    },
+    "video_language": {
+      "type": "string",
+      "required": false,
+      "default": "''"
+    }
+  }
+}

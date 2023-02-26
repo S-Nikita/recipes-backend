@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_description_directions",
+  "info": {
+    "name": "directions",
+    "icon": "arrow-circle-up"
+  },
+  "options": {},
+  "attributes": {
+    "direction_item": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

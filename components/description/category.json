@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_description_categories",
+  "info": {
+    "name": "category",
+    "icon": "apple-alt"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

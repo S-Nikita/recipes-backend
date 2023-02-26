@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_description_ingridients",
+  "info": {
+    "name": "ingridients",
+    "icon": "check-circle"
+  },
+  "options": {},
+  "attributes": {
+    "ingridients_item": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
